@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CS Society Member Registration</title>
+</head>
+
+<body>
+
+    <h1>CS Society - Member Profile Setup</h1>
+
+    <form action="#" method="POST">
+        <fieldset>
+            <legend>Student & Technical Information:</legend>
+
+            <label for="fname">First name:</label>
+            <input type="text" id="fname" name="fname" required><br><br>
+
+            <label for="lname">Last name:</label>
+            <input type="text" id="lname" name="lname" required><br><br>
+
+            <label for="year">Year of Study:</label>
+            <select id="year" name="year">
+                <option value="1">1st Year</option>
+                <option value="2">2nd Year</option>
+                <option value="3">3rd Year</option>
+                <option value="4">4th Year (B.Tech)</option>
+            </select><br><br>
+
+            <label>Primary Technical Interests:</label><br>
+            <input type="checkbox" id="ml" name="interest" value="Machine Learning">
+            <label for="ml">Machine Learning / AI</label><br>
+            <input type="checkbox" id="cpp" name="interest" value="C++">
+            <label for="cpp">C++ & Competitive Programming</label><br>
+            <input type="checkbox" id="embedded" name="interest" value="Embedded Systems">
+            <label for="embedded">TinyML / Embedded Systems</label><br><br>
+
+            <label for="github">GitHub Profile URL:</label>
+            <input type="url" id="github" name="github" placeholder="https://github.com/"><br><br>
+
+            <label for="email">University Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="bio">Short Bio & Recent Projects:</label><br />
+            <textarea id="bio" rows="4" cols="50" name="bio"
+                placeholder="Briefly describe your current projects or research..."></textarea><br><br>
+
+            <label for="resume">Upload Resume (PDF):</label><br><br>
+            <input type="file" id="resume" name="fileupload" accept=".pdf" /><br><br><br>
+
+            <center>
+                <input type="submit" name="submit" value="Register Profile" />
+                <input type="reset" name="reset" value="Clear Form" />
+            </center>
+        </fieldset>
+    </form>
+
+</body>
+
+</html>
